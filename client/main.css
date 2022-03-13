@@ -1,0 +1,969 @@
+body {
+  font-family: Arial Black;
+  background-color: #000d1a;
+}
+#left-sec {
+  width: 23%;
+  float: left;
+  padding-left: -250px;
+  user-select: none;
+}
+#main-page {
+  width: 74%;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  float: right;
+  margin-bottom: 150px;
+}
+#left-sec a {
+  color: black;
+}
+#left-sec a:hover {
+  text-decoration: overline;
+}
+#main-page a {
+  color:  #ff9900;
+}
+#full {
+  max-width: 90%;
+  margin: 0px auto;
+  margin-top: 45px;
+}
+#full a {
+  text-decoration: none;
+  user-select: none;
+}
+#name {
+  font-family: Copperplate Gothic Bold;
+  font-weight: bold;
+  padding-top: 0.5px;
+  padding-left: 22px;
+  user-select: none;
+}
+#name a {
+  color: #666633;
+  text-decoration: none;
+}
+#name a:hover {
+  color: #b0b076;
+  text-shadow: 3.5px 3.5px 20px green;
+}
+#profile {
+  background-color: #999966;
+  transition: all 0.2s;
+  margin-top: 0px;
+}
+#profile:hover {
+  padding-bottom: 31px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+#community {
+  background-color: #ff0066;
+  transition: all 0.2s;
+}
+#mp1 {
+  cursor: pointer;
+}
+#community:hover {
+  padding-bottom: 31px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+#following {
+  background-color: #ff9900;
+  font-size: 17.4px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.side-box {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  margin: 18px 0px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.side-box h3 {
+  margin-top: 2px;
+}
+#navigate-options {
+  display: block;
+  float: right;
+  margin: -11.9vh -2.4vw auto auto;
+  user-select: none;
+}
+#navigate-options a {
+  color: #4d4d33;
+  font-size: 25.5px;
+  font-weight: bold;
+  font-family: Bookman Old Style;
+  padding-left: 1.7vw;
+  cursor: pointer;
+}
+#navigate-options a:hover {
+  color: #7a7a52;
+}
+#post-form {
+  height: 200px;
+  background-color: #006600;
+  padding: 15px;
+  margin-top: -32px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-radius: 3px;
+}
+#post-form textarea {
+  display: block;
+  font-family: Gill Sans Ultra Bold;
+  font-size: 27px;
+  width: 97%;
+  border-radius: 5px;
+  border: 6px solid black;
+  font-weight: bold;
+  height: 77%;
+  color: white;
+  padding-left: 10px;
+  background-color: #000000;
+  resize: none;
+  outline: none;
+}
+#post-form button {
+  background-color: #cc0000;
+  font-family: Franklin Gothic Heavy;
+  font-size: 24px;
+  height: 42px;
+  line-height: 36px;
+  width: 18.4%;
+  margin-top: 9px;
+  float: right;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 4px;
+  border: 2px solid #cc0000;
+  transition: all 0.2s;
+  user-select: none;
+}
+#post-form button:hover {
+  background-color: #660000;
+  border: 2px solid #660000;
+  width: 19%;
+  margin-left: 8px;
+  border-radius: 6px;
+  margin-right: 12px;
+}
+#post-area ul {
+  list-style-type: none;
+}
+#post-area a:hover{
+  text-decoration: underline;
+}
+.poster-name {
+  user-select: none;
+}
+.post {
+  color: white;
+  background-color: #4d3300;
+  border-radius: 3px;
+  box-shadow: 2px 2px 1px grey;
+  line-height: 45px;
+  padding: 15px 31px 10px 32px;
+  margin: 0px 0px 35px -40px;
+}
+.post div:first-child {
+  color: black;
+  margin-bottom: 6px;
+  font-size: 19px;
+  display: inline;
+}
+.post div:nth-child(2) {
+  margin-bottom: 6px;
+  display: inline;
+  font-size: 18px;
+}
+.post div:nth-child(3) {
+  border-top: 4px solid black;
+  margin-top: 11px;
+  padding-top: 8px;
+  display: block;
+  font-size: 18px;
+}
+.content-paras {
+  margin-top: 2px;
+  font-size: 24px;
+  font-weight: bold;
+  user-select: text;
+}
+
+/* My Posts */
+
+#fill-UN {
+  color: darkgreen;
+}
+#my-posts-drafts-heading {
+  color: white;
+  margin-top: 3.8vh;
+  margin-left: 1.2vw;
+  cursor: default;
+}
+#navigate-options-0 {
+  display: block;
+  float: right;
+  margin: -9.2vh 1.8vw auto auto;
+  user-select: none;
+}
+#navigate-options-0 a {
+  color: #4d4d33;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Bookman Old Style;
+  padding-left: 1.7vw;
+  text-decoration: none;
+  cursor: pointer;
+}
+#navigate-options-0 a:hover {
+  color: #7a7a52;
+}
+#post-area-0 ul {
+  list-style-type: none;
+  margin-top: 5vh;
+  margin-bottom: 14vh;
+}
+.poster-name-0 {
+  user-select: none;
+}
+.post-0 {
+  color: white;
+  background-color: #4d3300;
+  border-radius: 3px;
+  box-shadow: 2px 2px 1px grey;
+  line-height: 45px;
+  padding: 8px 30px 15px 30px;
+  margin: 0vh 30vw 4.2vh -1.5vw;
+}
+.post-0 div:first-child {
+  margin-top: 5px;
+  color: black;
+  margin-bottom: 6px;
+  font-size: 19px;
+}
+.post-0 div:nth-child(2) {
+  border-top: 4px solid black;
+  padding-top: 8px;
+  display: block;
+  font-size: 18px;
+}
+.content-paras-0 {
+  margin-top: 2px;
+  font-size: 24px;
+  font-weight: bold;
+  user-select: text;
+}
+
+/* My Drafts */
+
+#post-area-1 ul {
+  list-style-type: none;
+  margin-top: 5vh;
+  margin-bottom: 14vh;
+}
+#post-area-1 {
+  display: none;
+}
+
+/* Login */
+
+#form-show-login a {
+  text-decoration: none;
+  color: #cc6600;
+  font-size: 1.8vw;
+}
+#form-show-login a:hover {
+   text-decoration: none;
+   color: #804000;
+}
+#name-login {
+  font-family: Copperplate Gothic Bold;
+  font-weight: bold;
+  color: #339966;
+  text-shadow: 5px 5px 95px black;
+  padding-top: 0.5px;
+  padding-left: 22px;
+}
+.nottoselect {
+    user-select: none;
+}
+#login-bar {
+  height: 5.6vh;
+  background-color: black;
+  padding-top: 1.8vh;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+#right-option-login {
+  display: block;
+  float: right;
+  margin-top: -73vh;
+  margin-left: 1vw;
+}
+#open-eye-login {
+  width: 2.65vw;
+  height: 4.15vh;
+}
+#slash-eye-login {
+  padding-top: 0.5vh;
+  width: 2.5vw;
+  height: 3.24vh;
+  display: none;
+}
+#outer-login {
+  margin-top: 13.4vh;
+  margin-left: 38.6vw;
+  height: 50.7vh;
+  width: 23.7vw;
+  background-color: white;
+  align-content: center;
+  box-shadow: 3.5px 3.5px 90px Black;
+  border-radius: 20px;
+}
+#outer-login input {
+  width: 20.35vw;
+  height: 4.1vh;
+  margin-top: -1.5vh;
+  border: 3.5px solid black;
+  font-family: Arial black;
+  font-weight: bold;
+  font-size: 1.23vw;
+}
+#button1-login {
+  width: 8.5vw;
+  height: 5.2vh;
+  background-color: #cc6600;
+  border: 3px #cc6600;
+  color: white;
+  cursor: pointer;
+}
+#button1-login:hover {
+  background-color: #804000;
+  transition: all 0.2s;
+}
+#button2-login {
+  width: 14vw;
+  height: 5.5vh;
+  background-color: #ffffff;
+  border-radius: 25px;
+  margin-top: 14px;
+  border: 2px #ffffff;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+.quick-links-login {
+  float: right;
+  margin-top: -1.55vh;
+  margin-right: 0.65vw;
+}
+#loading-anim-login {
+  display: block;
+  width: 22vw;
+  height: 33vh;
+  margin-left: 37.8vw;
+  margin-top: 9vh;
+}
+#loading-text-login {
+  font-size: 26px;
+  display: block;
+  margin-left: 30.6vw;
+  margin-top: -2vh;
+  user-select: none;
+}
+
+/* Register */
+
+#form-show-reg a {
+  text-decoration: none;
+  color: #cc6600;
+  font-size: 1.8vw;
+}
+#form-show-reg a:hover {
+   text-decoration: none;
+   color: #804000;
+}
+#name-reg {
+  font-family: Copperplate Gothic Bold;
+  font-weight: bold;
+  color: #339966;
+  text-shadow: 5px 5px 95px black;
+  padding-top: 0px;
+  padding-left: 22px;
+}
+#register-bar {
+  height: 5.6vh;
+  background-color: black;
+  padding-top: 1.8vh;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+#right-option-reg {
+  display: block;
+  float: right;
+  margin-top: -91.4vh;
+  margin-right: 0.11vw;
+}
+#open-eye-reg {
+  width: 2.65vw;
+  height: 4.15vh;
+}
+#slash-eye-reg {
+  padding-top: 0.5vh;
+  width: 2.5vw;
+  height: 3.24vh;
+  display: none;
+}
+#outer-reg {
+  margin-top: 6.5vh;
+  margin-left: 37.8vw;
+  height: 77vh;
+  width: 25vw;
+  background-color: white;
+  align-content: center;
+  box-shadow: 3.5px 3.5px 90px Black;
+  border-radius: 20px;
+}
+#outer-reg input {
+  width: 20vw;
+  height: 3.5vh;
+  margin-top: -1.5vh;
+  border: 3.5px solid black;
+  font-family: Arial black;
+  font-size: 1.2vw;
+}
+#button1-reg {
+  width: 8.5vw;
+  height: 5.2vh;
+  background-color: #cc6600;
+  border: 3px #cc6600;
+  color: white;
+  cursor: pointer;
+}
+#button1-reg:hover {
+  background-color: #804000;
+  transition: all 0.2s;
+}
+#button2-reg {
+  width: 17vw;
+  height: 7.5vh;
+  background-color: #ffffff;
+  border-radius: 24px;
+  margin-top: 14px;
+  border: 2px #ffffff;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+.quick-link-reg {
+  float: right;
+  margin-top: -1.55vh;
+  margin-right: 1.4vw;
+}
+#loading-anim-reg {
+  display: block;
+  width: 22vw;
+  height: 33vh;
+  margin-left: 38.7vw;
+  margin-top: 9vh;
+}
+#loading-text-reg {
+  font-size: 26px;
+  display: block;
+  margin-left: 32.5vw;
+  margin-top: -6vh;
+  user-select: none;
+}
+
+/* Account */
+
+#account-to-show {
+  user-select: none;
+}
+#account-to-show a {
+  text-decoration: none;
+}
+#navigate-options-acc {
+  display: block;
+  float: right;
+  margin: -8.5vh 2vw auto auto;
+  cursor: pointer;
+}
+#navigate-options-acc a {
+  color: #4d4d33;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Bookman Old Style;
+  padding-left: 1.7vw;
+  text-decoration: none;
+  user-select: none;
+}
+#navigate-options-acc a:hover {
+  color: #7a7a52;
+}
+#face {
+  width: 21.5vw;
+  height: 42.5vh;
+  border-radius: 800px;
+  margin-bottom: 1.9vh;
+  border: 5px solid darkorange;
+  box-shadow: 2px 2px 25px darkorange;
+}
+#left-side-acc {
+  width: 25vw;
+  display: inline-block;
+  text-align: left;
+  font-size: 22px;
+  margin-left: 2vw;
+  margin-top: 3vh;
+}
+#left-side-acc a {
+  display: inline-block;
+  text-decoration: none;
+  color: grey;
+  padding-top: 1.5vh;
+  padding-left: 1.5vw;
+  cursor: pointer;
+}
+#left-side-acc a:hover {
+  color:  #e0e0d1;
+}
+.hrleft {
+  width: 75%;
+}
+#right-side-acc {
+  padding-left: 30vw;
+  margin-top: -84vh;
+  color: green;
+}
+#posts-count, #followers-count, #following-count {
+  text-align: center;
+  display: inline-block;
+  margin-right: 3vw;
+  margin-top: 4vh;
+}
+#posts-count a, #followers-count a, #following-count a {
+    color: darkgrey;
+    cursor: pointer;
+}
+.anyone {
+  margin-top: 5.2vh;
+  color: darkorange;
+  font-size: 22px;
+}
+#self-biography {
+  user-select: text;
+  cursor: default;
+}
+#self-biography a {
+  color: blue;
+  font-size: 18px;
+  font-family: Century Gothic;
+  text-decoration: none;
+  cursor: pointer;
+}
+#self-biography a:hover {
+  text-decoration: underline;
+}
+#biotochange {
+  background-color: black;
+  border: 2px solid black;
+  box-shadow: 0px 0px 15px darkgreen;
+  width: 56vw;
+  height: 28vh;
+  padding: 1.2vh 1vw 1.2vh 1vw;
+  font-size: 22px;
+  font-weight: bold;
+  color: darkorange;
+  resize: none;
+  outline: none;
+}
+#change-bio, #cancel-change-bio {
+  margin-top: 2.8vh;
+  width: 6vw;
+  height: 4vh;
+  background-color: darkgrey;
+  border: 2px solid darkgrey;
+  font-size: 18px;
+  font-weight: bold;
+}
+#edit-biography button:hover {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  transition: all 0.25s;
+}
+#loading-anim-acc {
+  display: block;
+  width: 22vw;
+  height: 33vh;
+  margin-left: 38.5vw;
+  margin-top: 11vh;
+}
+#loading-text-acc, #loading-text-acc-delete {
+  color: white;
+  font-size: 26px;
+  display: block;
+  user-select: none;
+}
+#loading-text-acc {
+  margin-left: 33.4vw;
+  margin-top: -2vh;
+}
+#loading-text-acc-delete {
+  margin-left: 29.4vw;
+  margin-top: 10vh;
+}
+#edit-biography, #loading-show-acc {
+  display: none;
+}
+#user-username {
+  user-select: text;
+  cursor:default;
+}
+::selection {
+  color: white;
+  background: black;
+}
+
+/* Verify Account */
+
+#main-toshow {
+  color: white;
+  user-select: none;
+}
+
+/* Change Password */
+
+#center-changepass {
+  text-align: center;
+  color: black;
+  background-color: red;
+  width: 28vw;
+  margin: 17.5vh 35vw auto auto;
+  padding-top: 2.2vh;
+  font-family: Artifakt Element Heavy;
+  font-size: 35px;
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0px 0px 30px green;
+  user-select: none;
+}
+#center-changename {
+  text-align: center;
+  background-color: red;
+  color: black;
+  width: 28vw;
+  margin: 19vh 34.8vw auto auto;
+  padding-top: 2.2vh;
+  font-family: Artifakt Element Heavy;
+  font-size: 35px;
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0px 0px 30px green;
+  user-select: none;
+}
+#center-changepass input {
+  width: 21.4vw;
+  height: 5.2vh;
+  margin-top: 1.5vh;
+  padding-left: 0.8vw;
+  border: 3px solid black;
+  font-family: Arial black;
+  font-size: 21px;
+  outline: none;
+}
+#center-changepass button:hover {
+  background-color: #7a7a52;
+  border: 3px solid #7a7a52;
+  transition: all 0.3s;
+}
+.hrchange {
+  width: 99.3%;
+  size: 6%;
+  border: 1.6px solid;
+  background-color: black;
+  color: black;
+}
+#go-to-profile-changepass {
+  background-color: black;
+  color: white;
+  width: 14vw;
+  height: 7vh;
+  margin-top: 2.6vh;
+  margin-bottom: 3.5vh;
+  border: 3px solid black;
+  font-family: Arial Black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Default Behaviour Execution */
+
+#passcode-changed, #name-changed, #sent-forg-email {
+  display: none;
+}
+
+/* Change Name */
+
+#center-changename {
+  text-align: center;
+  background-color: red;
+  color: black;
+  width: 28vw;
+  margin: 19vh 34.8vw auto auto;
+  padding-top: 2.2vh;
+  font-family: Artifakt Element Heavy;
+  font-size: 35px;
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0px 0px 30px green;
+  user-select: none;
+}
+#center-changename input {
+  width: 21.4vw;
+  height: 5.2vh;
+  margin-top: 1.5vh;
+  padding-left: 0.8vw;
+  border: 3px solid black;
+  font-family: Arial black;
+  font-size: 21px;
+  outline: none;
+}
+.change-buttons {
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 17.4vw;
+  height: 7.8vh;
+  margin-top: 3.4vh;
+  padding-left: 12px;
+  border: 3px solid black;
+  font-family: Arial Black;
+  font-size: 21px;
+  cursor: pointer;
+}
+#go-to-profile-changename {
+  background-color: black;
+  color: white;
+  width: 14vw;
+  height: 7vh;
+  margin-top: 2.6vh;
+  margin-bottom: 3.5vh;
+  border: 3px solid black;
+  font-family: Arial Black;
+  font-size: 20px;
+  cursor: pointer;
+}
+#center-changename button:hover {
+  background-color: #7a7a52;
+  border: 3px solid #7a7a52;
+  transition: all 0.3s;
+}
+
+/* Reset Password */
+
+#center-resetpass {
+  text-align: center;
+  background-color: red;
+  width: 28.2vw;
+  margin: 22vh 35.7vw auto auto;
+  padding-top: 2.2vh;
+  font-family: Artifakt Element Heavy;
+  font-size: 31px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 30px green;
+  user-select: none;
+}
+#center-resetpass input {
+  width: 22.3vw;
+  height: 5.8vh;
+  margin-top: 1.5vh;
+  padding-left: 0.7vw;
+  border: 3px solid black;
+  font-family: Arial black;
+  font-size: 22px;
+  outline: none;
+}
+#center-resetpass button:hover {
+  background-color: #7a7a52;
+  border: 3px solid #7a7a52;
+  transition: all 0.3s;
+}
+#send-forg-email {
+  background-color: black;
+  color: white;
+  width: 18vw;
+  height: 9.6vh;
+  margin-top: 3.4vh;
+  padding-left: 12px;
+  border: 3px solid black;
+  font-family: Arial Black;
+  font-size: 21px;
+  cursor: pointer;
+}
+#go-to-login {
+  background-color: black;
+  color: white;
+  width: 14vw;
+  height: 7vh;
+  margin-top: 2.6vh;
+  margin-bottom: 3.5vh;
+  border: 3px solid black;
+  font-family: Arial Black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/* View Profile */
+
+#user-username-vp {
+  user-select: text;
+  cursor: default;
+}
+#account-to-show-vp {
+  user-select: none;
+}
+#account-to-show-vp a {
+  text-decoration: none;
+}
+#navigate-options-vp {
+  display: block;
+  float: right;
+  margin: -8.5vh 2vw auto auto;
+  cursor: pointer;
+}
+#navigate-options-vp a {
+  color: #4d4d33;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Bookman Old Style;
+  padding-left: 1.7vw;
+  text-decoration: none;
+  user-select: none;
+}
+#navigate-options-vp a:hover {
+  color: #7a7a52;
+}
+#face {
+  width: 21.5vw;
+  height: 42.5vh;
+  border-radius: 800px;
+  margin-bottom: 1.9vh;
+  border: 5px solid darkorange;
+  box-shadow: 2px 2px 25px darkorange;
+}
+#left-side-vp {
+  width: 25vw;
+  display: inline-block;
+  text-align: left;
+  font-size: 22px;
+  margin-left: 2vw;
+  margin-top: 3.5vh;
+}
+#right-side-vp {
+  padding-left: 30vw;
+  margin-top: -47vh;
+  color: green;
+}
+#posts-count-vp, #followers-count-vp, #following-count-vp {
+  text-align: center;
+  display: inline-block;
+  margin-right: 3vw;
+  margin-top: 4vh;
+}
+#posts-count-vp a, #followers-count-vp a, #following-count-vp a {
+    color: darkgrey;
+    cursor: pointer;
+}
+.anyone {
+  margin-top: 5.2vh;
+  color: darkorange;
+  font-size: 22px;
+}
+#self-biography-vp {
+  user-select: text;
+  cursor: default;
+}
+#user-username {
+  user-select: text;
+  cursor:default;
+}
+#this-acc {
+  width: 9.5vw;
+  height: 5.2vh;
+  font-size: 21px;
+  font-weight: bold;
+  border-radius: 50px;
+  background-color: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+/* 404 Error */
+
+#all-inc-add {
+  color: white;
+  margin: 4.4vh auto auto 1.6vw;
+  cursor: default;
+  user-select: none;
+}
+#all-inc-add a {
+  font-size: 22px;
+  color: red;
+}
+#all-inc-add a:hover {
+  color: darkorange;
+}
+
+/* Follow & Following List */
+
+#whole-ff a {
+  text-decoration: none;
+  color: black;
+}
+#whole-ff a:hover {
+  color: darkgreen;
+}
+#following-ff, #followers-ff {
+  display: inline-block;
+  background-color: darkorange;
+  width: 30vw;
+  margin-top: -5vh;
+  box-shadow: 2px 2px 25px green;
+  border-radius: 25px;
+}
+#following-ff {
+  float: left;
+  margin-left: 10vw;
+}
+#followers-ff {
+  float: right;
+  margin-right: 10vw;
+}
+#following-list-ff, #followers-list-ff {
+  font-size: 21px;
+  font-family: Bahnschrift SemiLight;
+  font-weight: bold;
+}
+#quick-links-ff {
+  float: left;
+  text-align: center;
+  margin-left: 3.7vw;
+  letter-spacing: 3px;
+}
+#quick-links-ff a {
+  font-size: 24px;
+  color: white;
+}
