@@ -15,6 +15,27 @@
 
 -----
 
+### Project Overview -
+<br>
+<img src="./Output/Image1.png">
+<img src="./Output/Image2.png">
+<img src="./Output/Image3.png">
+<img src="./Output/Image4.png">
+<img src="./Output/Image5.png">
+<img src="./Output/Image6.png">
+<img src="./Output/Image7.png">
+<img src="./Output/Image8.png">
+<img src="./Output/Image9.png">
+<img src="./Output/Image10.png">
+<img src="./Output/Image11.png">
+<img src="./Output/Image12.png">
+<img src="./Output/Image13.png">
+<img src="./Output/Image14.png">
+<img src="./Output/Image15.png">
+
+-----
+
 ### Instructions - 
 
-### Include your Firebase Configurations in the [_FirebaseConfig_](https://github.com/bevatsal1122/FireHunt/blob/main/imports/ui/FirebaseConfig.js) File in order to execute the App properly as expected. Also, ReactJS, MeteorJS, Google Firebase & MongoDB should be installed to run the App.
+- ### Include your Firebase Configurations in the [_FirebaseConfig_](https://github.com/bevatsal1122/FireHunt/blob/main/imports/ui/FirebaseConfig.js) File in order to execute the App properly as expected. Also, ReactJS, MeteorJS, Google Firebase & MongoDB should be installed to run the App. 
+- ### The User's Information is stored in `accounts` Collection with Individual UID's as Document Names in Firebase Firestore.
