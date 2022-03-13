@@ -1,0 +1,3 @@
+firebaseConfig = {
+  /* <Here> */
+};
