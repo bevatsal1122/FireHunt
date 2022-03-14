@@ -130,6 +130,10 @@ body {
   resize: none;
   outline: none;
 }
+#post-form textarea::selection {
+  color: black;
+  background-color: white;
+}
 #post-form button {
   background-color: #cc0000;
   font-family: Franklin Gothic Heavy;
@@ -560,6 +564,9 @@ body {
   margin-top: 5.2vh;
   color: darkorange;
   font-size: 22px;
+}
+.anyone a {
+  user-select: none;
 }
 #self-biography {
   user-select: text;
