@@ -15,7 +15,7 @@ var userName, userUserName, userEmail, userAge, usertonotify, userBio, userPosts
 // Function to Read Data from Firebase Firestore Database
 async function readfromcloudfs(accountuid)
 {
-  const docSnap = await getDoc(doc(db, "accounts", accountuid));
+  await getDoc(doc(db, "accounts", accountuid));
   if (docSnap.exists())
   {
     userName = docSnap.data().name;
