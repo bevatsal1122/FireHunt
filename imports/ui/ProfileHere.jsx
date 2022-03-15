@@ -1,6 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import React from 'react';
 import '/imports/api/collection';
+import { useTracker } from 'meteor/react-meteor-data';
 import { Mongo } from 'meteor/mongo';
 
 // Importing Functions from SDKs
@@ -19,8 +20,7 @@ const db = getFirestore();
 export const ProfileHere = () => {
 
   var userName, userUserName, userBio, userPosts;
-  var hostUserName, bcounter = 0;
-
+  var hostUserName;
 
   const buttonFlip = () => {
     var ffchoice = FollowList.find({
@@ -75,45 +75,36 @@ export const ProfileHere = () => {
     document.getElementById("total-following-vp").innerHTML = following;
   }
 
-  // Function to Read Data from Firebase Firestore Database
-  async function loadprofiledatafs()
-  {
+  const pdata = useTracker(() => {
     var tofind = window.location.href.slice(34, 55);
-    var viewusername = UsedUserName.find({
-      usedUN: tofind,
-      uidUN : {$exists: true}
+    return UsedUserName.find({
+      usedUN: tofind
     }).fetch();
-    if (viewusername.length > 0)
+  });
+
+  async function popData (accountuid)
+  {
+    const docSnap = await getDoc(doc(db, "accounts", accountuid));
+    if (docSnap.exists())
     {
-      const accountuid = viewusername[0].uidUN;
-      const docSnap = await getDoc(doc(db, "accounts", accountuid));
-      if (docSnap.exists())
-      {
-        userName = docSnap.data().name;
-        userUserName = docSnap.data().username;
-        userBio = docSnap.data().bio;
-        userPosts = docSnap.data().posts;
-        document.getElementById("user-name-vp").innerHTML = `${userName}`;
-        document.getElementById("user-username-vp").innerHTML = `@${userUserName}`;
-        document.getElementById("biotoadd-vp").innerHTML = `${userBio}`;
-        document.getElementById("total-posts-vp").innerHTML = `${userPosts}`;
-        buttonChoice();
-        updateInitialFollowService();
-      }
-    }
-    else
-    {
-      bcounter++;
-      if (bcounter>=2 && bcounter<=12)
-      {
-        loadprofiledatafs();
-      }
-      else if (bcounter>=13)
-      {
-        window.location.reload();
-      }
+      userName = docSnap.data().name;
+      userUserName = docSnap.data().username;
+      userBio = docSnap.data().bio;
+      userPosts = docSnap.data().posts;
+      document.getElementById("user-name-vp").innerHTML = `${userName}`;
+      document.getElementById("user-username-vp").innerHTML = `@${userUserName}`;
+      document.getElementById("biotoadd-vp").innerHTML = `${userBio}`;
+      document.getElementById("total-posts-vp").innerHTML = `${userPosts}`;
+      buttonChoice();
+      updateInitialFollowService();
     }
   }
+
+    pdata.map(viewusername => {
+      const accountuid = viewusername.uidUN;
+      popData(accountuid);
+  })
+
 
   // Function to Read Data from Firebase Firestore Database (Host Profile)
   async function readfromcloudfs(accountuid)
@@ -136,7 +127,6 @@ export const ProfileHere = () => {
     {
       const uid = user.uid;
       readfromcloudfs(uid);
-      loadprofiledatafs();
     }
     else
     {
@@ -151,8 +141,6 @@ export const ProfileHere = () => {
   const invokeViewFollow = () => {
       location =  "../viewprofilef&f/" + userUserName;
   };
-
-  loadprofiledatafs();
 
   return (
 
