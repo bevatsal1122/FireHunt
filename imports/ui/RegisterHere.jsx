@@ -34,15 +34,14 @@ export const RegisterHere = () => {
   var z=false;
   const button2List = (e) => {
     e.preventDefault();
+    z=!z;
     if (z)
     {
       document.getElementById("ask-notify").innerHTML += "<small> ✔️<small>";
-      z=false;
     }
     else
     {
       document.getElementById("ask-notify").innerHTML = "Notify me about Future Updates";
-      z=true;
     }
   }
 
