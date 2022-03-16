@@ -31,13 +31,13 @@ async function addtocloudfs(name, username, email, age, tonotify, accountuid)
 
 export const RegisterHere = () => {
 
-  var z=false;
+  var z=true;
   const button2List = (e) => {
     e.preventDefault();
     z=!z;
     if (z)
     {
-      document.getElementById("ask-notify").innerHTML += "<small> ✔️<small>";
+      document.getElementById("ask-notify").innerHTML += "<small> ✔️</small>";
     }
     else
     {
@@ -168,7 +168,7 @@ export const RegisterHere = () => {
            </button>
            <br />
            <button type="button" id="button2-reg" onClick={button2List}>
-              <b style={{fontSize: "1.2vw"}} id="ask-notify">Notify me about Future Updates</b>
+              <b style={{fontSize: "1.2vw"}} id="ask-notify">Notify me about Future Updates<small> ✔️</small></b>
            </button>
         </form>
 
