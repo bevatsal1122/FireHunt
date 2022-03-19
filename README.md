@@ -1,6 +1,6 @@
 # FireHunt
 
-## Live Demonstration - 
+## Live Demonstration - [Here](https://www.youtube.com/channel/UCfJtjGmNYSZJf_YA3Sfwy2g)
 
 ### Project Details - 
 
@@ -40,4 +40,4 @@
 ### Instructions - 
 
 - ### Include your Firebase Configurations in the [_FirebaseConfig_](https://github.com/bevatsal1122/FireHunt/blob/main/imports/ui/FirebaseConfig.js) File in order to execute the App properly as expected. Also, ReactJS, MeteorJS, Google Firebase & MongoDB should be installed to run the App. 
-- ### The User's Information is stored in `accounts` Collection with Individual UID's as Document Names in Firebase Firestore.
+- ### The User's Information is stored in `accounts` Collection with Individual UIDs as Document Names in Firebase Firestore.
